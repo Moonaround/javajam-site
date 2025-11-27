@@ -147,29 +147,59 @@ input, textarea, select {
 
 /* Mobile view (screens up to 480px wide) */
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 24px;          /* smaller title for small screens */
-        margin: 20px 0;           /* reduce spacing */
+    body {
+        width: 100%;              /* body fills screen */
+        max-width: none;          /* remove fixed max width */
+        padding: 0 10px;          /* add small side padding */
     }
+
+    header {
+        padding-left: 0;                /* remove desktop padding */
+        text-align: center;             /* center text */
+        background-size: 60px 60px;     /* shrink logo for mobile */
+        background-position: center top;/* place logo above title */
+    }
+
+    header h1 {
+        font-size: 22px;          /* smaller title */
+        margin: 10px auto;        /* center horizontally */
+        padding-top: 70px;        /* push text below logo */
+        text-align: center;
+    }
+
     nav ul {
         flex-direction: column;   /* stack links vertically */
         text-align: center;       /* center links */
         gap: 10px;                /* tighter spacing */
         padding: 0;               /* remove extra padding */
     }
+
+    nav a {
+        font-size: 18px;          /* slightly smaller links */
+    }
+
     main {
         margin-left: 0;           /* no left margin on mobile */
         padding: 10px;            /* smaller padding */
     }
+
     main table {
         width: 100%;              /* table fills screen width */
         font-size: 14px;          /* smaller text for readability */
     }
+
     main th, main td {
         padding: 8px;             /* reduce cell padding */
     }
-    body {
-        width: 100%;              /* body fills screen */
-        max-width: none;          /* remove fixed max width */
+
+    /* Hero images: shrink height for mobile */
+    #homehero, #heromugs, #heroguitar, #herojobs {
+        height: 200px;
+        background-position: center;
+    }
+
+    /* Forms: stretch full width */
+    form {
+        max-width: 100%;
     }
 }
