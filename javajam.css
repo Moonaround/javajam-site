@@ -125,3 +125,51 @@ input, textarea, select {
     margin-top: 5px;
     padding: 5px;
 }
+/* ====== Responsive Styles ====== */
+/* Place this at the bottom of javajam.css so it overrides base styles */
+
+/* Tablet view (screens up to 768px wide) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;   /* stack links vertically */
+        gap: 20px;                /* smaller spacing between links */
+        text-align: center;       /* center nav links */
+    }
+    main {
+        margin-left: 0;           /* remove left margin so content fills screen */
+    }
+    header {
+        padding-left: 0;          /* remove fixed padding */
+        text-align: center;       /* center header text */
+        background-size: 100px 100px; /* shrink logo for tablets */
+    }
+}
+
+/* Mobile view (screens up to 480px wide) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;          /* smaller title for small screens */
+        margin: 20px 0;           /* reduce spacing */
+    }
+    nav ul {
+        flex-direction: column;   /* stack links vertically */
+        text-align: center;       /* center links */
+        gap: 10px;                /* tighter spacing */
+        padding: 0;               /* remove extra padding */
+    }
+    main {
+        margin-left: 0;           /* no left margin on mobile */
+        padding: 10px;            /* smaller padding */
+    }
+    main table {
+        width: 100%;              /* table fills screen width */
+        font-size: 14px;          /* smaller text for readability */
+    }
+    main th, main td {
+        padding: 8px;             /* reduce cell padding */
+    }
+    body {
+        width: 100%;              /* body fills screen */
+        max-width: none;          /* remove fixed max width */
+    }
+}
