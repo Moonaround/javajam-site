@@ -147,12 +147,13 @@ input, textarea, select {
 
 /* Mobile view (screens up to 480px wide) */
 @media (max-width: 480px) {
+    /* Body: make sure it fills the whole screen */
     body {
-        width: 100%;              /* body fills screen */
-        max-width: none;          /* remove fixed max width */
-        padding: 0 10px;          /* add small side padding */
+        width: 100%;              /* full width on mobile */
+        max-width: none;          /* remove desktop max width cap */
+        margin: 0;                /* no auto-centering margins */
+        padding: 0 10px;          /* small side padding so text isn't flush against edges */
     }
-
     header {
         padding-left: 0;                /* remove desktop padding */
         text-align: center;             /* center text */
