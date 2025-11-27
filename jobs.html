@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaJam Jobs</title>
+    <link rel="stylesheet" href="javajam.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>JavaJam Coffee Bar</h1>
+        <div id="logo"></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="herojobs"></div>
+        <h2>Work With Us</h2>
+        <p>Fill out the form below to apply for a job at JavaJam Coffee Bar.</p>
+
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="position">Position Applying For:</label>
+            <select id="position" name="position">
+                <option value="barista">Barista</option>
+                <option value="server">Server</option>
+                <option value="manager">Manager</option>
+            </select>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 JavaJam Coffee Bar</p>
+    </footer>
+</div>
+</body>
+</html>

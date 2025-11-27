@@ -1,0 +1,127 @@
+/* ====== Base Styles ====== */
+body { justify-self: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('coffeebackground.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* background image stays in the same position */
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    color: #231814;
+}
+
+#wrapper {
+    margin: 10px auto;
+    max-width: 1500px;  /* a container that wraps all or most of your page content */
+}
+
+/* Header */
+header {
+    background-image: url("whitecoffee.png");
+    background-repeat: no-repeat;
+    background-size: 135px 135px;
+    margin: 10px auto;
+    padding-left: 300px;
+    color: #FEF6C2;
+}
+
+header h1 {
+    padding-top: 90px;
+    margin: 50px 30px;
+    font-size: 40px;
+}
+
+/* Navigation */
+nav {
+    width: 200px;}
+    
+nav ul { 
+    list-style-type: none; /* remove the bullet points */
+    display: flex;             /* makes items horizontal */
+    justify-content: space-between; /* pushes the first item to the left corner and the last item to the right corner */
+    gap: 200px;      
+    margin-bottom: 20px;           /* adds space between items */
+}
+nav a:link, nav a:visited {
+    color: #FEF6C2; /* link color */
+    text-decoration: none;     /* removes underline */
+    font-size: 20px;           /* makes text bigger */
+    font-weight: bold;
+}
+nav a:hover {    /* hover effect when you change something it effect on the link */
+    color: #31e7ff;
+}
+/* Main content */
+main {
+    margin-left: 220px;
+    color: #ffffff;
+    background-size: cover;
+    background-color: #231814;
+    background-position: center left;
+    overflow: auto; 
+    padding: 16px;
+}
+/* Main table */
+main table {
+    width: 80%;
+    margin: 20px auto;          /* center the table */
+    border-collapse: collapse;  /* remove double borders */
+    background-color: #FEF6C2;     /* light yellow */
+    color:#231814;           /* dark text */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* soft shadow */
+}
+/* Header row */
+main th {
+    background-color: #CC9933;  /* light brown */
+    color: #141f23;             /* light text */
+    padding: 15px;
+    font-size: 18px;
+}
+/* Table cells */
+main td {
+  border: 1px solid #CC9933;  /* light brown border */
+  padding: 12px;
+}
+
+/* Row hover effect */
+main tr:hover {
+  background-color: #FFF2B2;  /* highlight when hovering */
+}
+
+
+/* Footer */
+footer {
+    clear: both;
+    color: #FEF6C2;
+    text-align: right;
+    padding: 1em 0;
+}
+
+/* Hero Images */
+#homehero, #heromugs, #heroguitar, #herojobs {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+}
+#homehero { background-image: url("plant.jpg"); }
+#heromugs { background-image: url("menuupdate.png"); }
+#heroguitar { background-image: url("music.jpg"); }
+#herojobs { background-image: url("barista.jpg"); }
+
+/* Forms (Chapter 9) */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+label {
+    margin-top: 10px;
+}
+input, textarea, select {
+    margin-top: 5px;
+    padding: 5px;
+}
