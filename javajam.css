@@ -17,7 +17,20 @@ body { justify-self: center;
     margin: 10px auto;
     max-width: 1500px;  /* a container that wraps all or most of your page content */
 }
+button {
+  background-color: #3b2f2f;  /* coffee dark brown */
+  color: #FEF6C2;             /* light yellow text */
+  border: none;
+  padding: 10px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+}
 
+button:hover {
+  background-color: #5a3e36;  /* slightly lighter brown */
+}
 /* Header */
 header {
     background-image: url("whitecoffee.png");
